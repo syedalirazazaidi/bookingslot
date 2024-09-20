@@ -1,16 +1,14 @@
 import * as React from 'react';
 import type { HeadFC, PageProps } from 'gatsby';
 import { Button, Input } from 'antd';
+import Layout from '../components/Layout';
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
-    <main>
-      hi this is ali
-      <Button type="primary" className="bg-green-900 w-[120px]">
-        Click Me
-      </Button>
-      <Input placeholder="Please Input" />
-    </main>
+    <Layout>
+      <h1>Welcome to My Gatsby Site</h1>
+      <p>This is the homepage content.</p>
+    </Layout>
   );
 };
 

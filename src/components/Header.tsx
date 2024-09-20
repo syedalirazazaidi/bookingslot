@@ -3,7 +3,7 @@ import React from 'react'
 export default function Header() {
     return (
         <header>
-            this si header
+            this is header
         </header>
     )
 }
