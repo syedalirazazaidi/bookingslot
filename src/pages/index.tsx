@@ -7,14 +7,13 @@ import FeatureHighlights from '../components/Home/FeatureHighlights';
 import AboutUS from '../components/Home/AboutUs';
 import Booking from '../components/booking/main';
 
-
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <Layout>
-      <Booking/>
-   {/* <Stats />
-      <FeatureHighlights/>
-      <AboutUS/>  */}
+      <Booking />
+
+      {/* <FeatureHighlights/>
+       <AboutUS/>  */}
     </Layout>
   );
 };
