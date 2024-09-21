@@ -23,20 +23,20 @@ export default function Navbar() {
     <Header
       style={{
         backgroundColor: '#FFFFFF',
-        padding: '0 90px',
+        padding: '0 110px',
         boxShadow: '0 4px 6px rgba(0, 0, 0, 0.08)',
         borderBottom: '2px solid #e0e0e0',
       }}
     >
       <Row align="middle" justify="space-between" style={{ width: '100%' }}>
         {/* Logo */}
-        <Col xs={20} sm={18} md={4}>
+        <Col xs={24} sm={12} md={6}>
           <Link to="/">
             <StaticImage
               src="../images/logo-nw.svg"
               alt="Logo-nw"
-              placeholder="blurred"
               layout="fixed"
+              height={50}
             />
           </Link>
         </Col>

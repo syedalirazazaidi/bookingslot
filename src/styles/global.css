@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* src/styles/container.css */
+.container {
+  padding: 0 90px;
+}

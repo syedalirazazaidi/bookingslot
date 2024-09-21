@@ -8,6 +8,10 @@ const IndexPage: React.FC<PageProps> = () => {
     <Layout>
       <h1>Welcome to My Gatsby Site</h1>
       <p>This is the homepage content.</p>
+      <h1>Welcome to My Gatsby Site</h1>
+      <p>This is the homepage content.</p>
+          <h1>Welcome to My Gatsby Site</h1>
+      <p>This is the homepage content.</p>
     </Layout>
   );
 };
