@@ -2,6 +2,7 @@ import React from 'react'
 import Herosection from './HeroSection'
 import Stats from './Stats'
 import Heighlight from './Heighlight'
+import Slot from './Slot'
 
 export default function Booking() {
     return (
@@ -9,6 +10,7 @@ export default function Booking() {
             <Herosection/>
             <Stats/>
             <Heighlight/>
+            <Slot/>
         </div>
     )
 }
