@@ -5,13 +5,13 @@ import Layout from '../components/Layout';
 import Stats from '../components/Home/Stats';
 import FeatureHighlights from '../components/Home/FeatureHighlights';
 import AboutUS from '../components/Home/AboutUs';
+import Booking from '../components/booking/main';
 
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <Layout>
-      <h1>Welcome to My Gatsby Site</h1>
-      <p>This is the homepage content.</p>
+      <Booking/>
       <Stats />
       <FeatureHighlights/>
       <AboutUS/>
