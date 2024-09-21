@@ -11,9 +11,6 @@ const IndexPage: React.FC<PageProps> = () => {
   return (
     <Layout>
       <Booking />
-
-      {/* <FeatureHighlights/>
-       <AboutUS/>  */}
     </Layout>
   );
 };
