@@ -4,6 +4,7 @@ import Stats from './Stats'
 import Heighlight from './Heighlight'
 import Slot from './Slot'
 import Visa from './VisaSection'
+import Management from './Management'
 
 export default function Booking() {
     return (
@@ -13,6 +14,7 @@ export default function Booking() {
             <Heighlight/>
             <Slot/>
             <Visa/>
+            <Management/>
         </div>
     )
 }

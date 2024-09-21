@@ -5,12 +5,12 @@ import Layout from '../components/Layout';
 import Stats from '../components/Home/Stats';
 import FeatureHighlights from '../components/Home/FeatureHighlights';
 import AboutUS from '../components/Home/AboutUs';
-import Booking from '../components/booking/main';
+import Booking from '../components/booking/Main';
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <Layout>
-      <Booking />
+     <Booking/>
     </Layout>
   );
 };
