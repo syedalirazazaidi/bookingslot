@@ -12,9 +12,9 @@ const IndexPage: React.FC<PageProps> = () => {
   return (
     <Layout>
       <Booking/>
-      {/* <Stats />
+   {/* <Stats />
       <FeatureHighlights/>
-      <AboutUS/> */}
+      <AboutUS/>  */}
     </Layout>
   );
 };

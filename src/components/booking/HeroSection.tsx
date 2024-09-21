@@ -7,7 +7,7 @@ const { Title, Text } = Typography;
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="bg-slate-100/15 py-6">
+    <section className="bg-slate-300/15 py-6">
       <div className="  px-28">
         <Row
           gutter={[32, 32]} // Maintain the gutter for spacing between columns
