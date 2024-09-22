@@ -6,19 +6,22 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Poppins', 'system-ui', '-apple-system', 'Roboto', 'sans-serif'], // Set Poppins as the default sans-serif font
+      },
       container: {
         center: true,
         padding: '1.5rem',
         screens: {
-          sm: '100%', // Full width on small screens
-          md: '100%', // Full width on medium screens
-          lg: '100%', // Full width on large screens
-          xl: '1140px', // Set max width to 1140px for extra-large screens
-          '2xl': '1140px', // Set max width to 1140px for 2xl screens
+          sm: '100%', 
+          md: '100%', 
+          lg: '100%', 
+          xl: '1140px', 
+          '2xl': '1140px', 
         },
       },
       boxShadow: {
-        'statBox': '0px 8px 24px rgba(149, 157, 165, 0.2)', // Custom shadow
+        'statBox': '0px 8px 24px rgba(149, 157, 165, 0.2)', 
       },
       colors: {
         pink: 'rgb(255, 236, 250)',
