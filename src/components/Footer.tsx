@@ -1,198 +1,376 @@
 import React from 'react';
-import { Layout, Row, Col, Typography, Menu } from 'antd';
-import { StaticImage } from 'gatsby-plugin-image'; // Import StaticImage
-import { Link } from 'gatsby'; // Gatsby's Link component
+import { Layout, Row, Col, Typography, Menu, Button } from 'antd';
 import {
   FacebookOutlined,
   TwitterOutlined,
+  YoutubeOutlined,
   InstagramOutlined,
-  LinkedinOutlined,
+  GlobalOutlined,
 } from '@ant-design/icons';
+import { Link } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const { Footer } = Layout;
 const { Title, Text } = Typography;
 
-// Define a type for the categories
-type Category = 'Quick Links' | 'Company' | 'Support' | 'Helpful Links';
-
 const AppFooter: React.FC = () => {
-  // Function to return links for each category
-  const getLinksForCategory = (category: Category) => {
-    switch (category) {
-      case 'Quick Links':
-        return (
-          <>
-            <Menu.Item >
-              <Link to="/home" >Home</Link>
-            </Menu.Item>
-            <Menu.Item>
-              <Link to="/aboutus">About Us</Link>
-            </Menu.Item>
-            <Menu.Item>
-              <Link to="/features">Features</Link>
-            </Menu.Item>
-            <Menu.Item>
-              <Link to="/pricing">Pricing</Link>
-            </Menu.Item>
-          </>
-        );
-      case 'Company':
-        return (
-          <>
-            <Menu.Item>
-              <Link to="/aboutus">About Us</Link>
-            </Menu.Item>
-            <Menu.Item>
-              <Link to="/careers">Careers</Link>
-            </Menu.Item>
-            <Menu.Item>
-              <Link to="/blog">Blog</Link>
-            </Menu.Item>
-            <Menu.Item>
-              <Link to="/press">Press</Link>
-            </Menu.Item>
-          </>
-        );
-      case 'Support':
-        return (
-          <>
-            <Menu.Item>
-              <Link to="/customersupport">Customer Support</Link>
-            </Menu.Item>
-            <Menu.Item>
-              <Link to="/faq">FAQ</Link>
-            </Menu.Item>
-            <Menu.Item>
-              <Link to="/contact">Contact Us</Link>
-            </Menu.Item>
-            <Menu.Item>
-              <Link to="/help">Help Center</Link>
-            </Menu.Item>
-          </>
-        );
-      case 'Helpful Links':
-        return (
-          <>
-            <Menu.Item>
-              <Link to="/privacy-policy">Privacy Policy</Link>
-            </Menu.Item>
-            <Menu.Item>
-              <Link to="/terms-of-service">Terms of Service</Link>
-            </Menu.Item>
-            <Menu.Item>
-              <Link to="/disclaimer">Disclaimer</Link>
-            </Menu.Item>
-            <Menu.Item>
-              <Link to="/sitemap">Sitemap</Link>
-            </Menu.Item>
-          </>
-        );
-      default:
-        return null;
-    }
-  };
-
   return (
-    <Footer style={{ backgroundColor: 'transparent', padding: '50px 90px' }}>
-      <Row gutter={[16, 16]} justify="space-between">
-        {/* Logo and Description */}
-        <Col xs={24} sm={12} md={6}>
-          <div>
-            <Link to="/">
-              <StaticImage
-                src="../images/footer-logo.svg"
-                alt="Logo-nw"
-                placeholder="blurred"
-                layout="fixed"
-              />
-            </Link>
-            <Text style={{ marginTop: '16px', display: 'block' }}>
-              Air plant banjo lyft occupy retro adaptogen indego
-            </Text>
+    <div>
+      <Footer className="bg-gray-100 py-12">
+        <div className="mx-24">
+          <div className=" mx-auto py-8">
+            <div className="flex flex-wrap justify-between">
+              {/* Logo and About Section */}
+              <div className="w-full md:w-1/4 px-4 mb-6 md:mb-0">
+                <Link to="/">
+                  <StaticImage
+                    src="../images/footer-logo.svg"
+                    alt="Easy Slot Booking"
+                    layout="constrained"
+                    quality={100}
+                    className="mb-4"
+                  />
+                </Link>
+                <div className="footer_stack_logo flex items-center gap-2">
+                  <span className="block text-gray-500">
+                    Design and Developed by
+                  </span>
+                  <StaticImage
+                    src="../images/stackadroit-logo-footer.svg"
+                    alt="Stackadroit LLP"
+                    className="my-2 "
+                  />
+                </div>
+                <p className="text-[#310C7D]  mb-4">
+                  We help you get your visa slots in a quick, easy, and secure
+                  manner. Become a part of our family today for a smoother visa
+                  slot booking process.
+                </p>
+
+                <div className="flex gap-4 mt-4">
+                  <a href="#" className="hover:text-gray-900">
+                    <FacebookOutlined className="text-2xl" />
+                  </a>
+                  <a href="#" className="hover:text-gray-900">
+                    <TwitterOutlined className="text-2xl" />
+                  </a>
+                  <a href="#" className="hover:text-gray-900">
+                    <YoutubeOutlined className="text-2xl" />
+                  </a>
+                  <a href="#" className="hover:text-gray-900">
+                    <InstagramOutlined className="text-2xl" />
+                  </a>
+                </div>
+              </div>
+
+              {/* Quick Links */}
+              <div className="w-full xs:w-1/2 sm:w-1/2 md:w-1/6 px-4 mb-6 md:mb-0">
+                <h5 className="text-[15px] font-semibold text-[#310C7D] mb-4">
+                  Quick Links
+                </h5>
+                <ul className="space-y-2">
+                  <li>
+                    <Link
+                      to="/about_us"
+                      className="text-[#310C7D]  hover:text-gray-900"
+                    >
+                      About Us
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/features"
+                      className="text-[#310C7D]  hover:text-gray-900"
+                    >
+                      Features
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/pricing"
+                      className="text-[#310C7D]  hover:text-gray-900"
+                    >
+                      Pricing
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="#"
+                      className="text-[#310C7D]  hover:text-gray-900"
+                    >
+                      Download
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="#"
+                      className="text-[#310C7D]  hover:text-gray-900"
+                    >
+                      Customer Support
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="#"
+                      className="text-[#310C7D]  hover:text-gray-900"
+                    >
+                      Reviews
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Company */}
+              <div className="w-full xs:w-1/2 sm:w-1/2 md:w-1/6 px-4 mb-6 md:mb-0">
+                <h5 className="text-[15px] font-semibold text-[#310C7D]  mb-4">
+                  Company
+                </h5>
+                <ul className="space-y-2">
+                  <li>
+                    <Link
+                      to="/about_us"
+                      className="text-[#310C7D]  hover:text-gray-900"
+                    >
+                      Success Stories
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/features"
+                      className="text-[#310C7D]  hover:text-gray-900"
+                    >
+                      Careers
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/pricing"
+                      className="text-[#310C7D]  hover:text-gray-900"
+                    >
+                      Customer Reviews
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="#"
+                      className="text-[#310C7D]  hover:text-gray-900"
+                    >
+                      Agency Partners
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="#"
+                      className="text-[#310C7D]  hover:text-gray-900"
+                    >
+                      Referral
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="#"
+                      className="text-[#310C7D]  hover:text-gray-900"
+                    >
+                      Sitemap
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="#"
+                      className="text-[#310C7D]  hover:text-gray-900"
+                    >
+                      Learn
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Support */}
+              <div className="w-full xs:w-1/2 sm:w-1/2 md:w-1/6 px-4 mb-6 md:mb-0">
+                <h5 className="text-[15px] font-semibold text-[#310C7D]  mb-4">
+                  Support
+                </h5>
+                <ul className="space-y-2">
+                  <li>
+                    <Link
+                      to="#"
+                      className="text-[#310C7D]  hover:text-gray-900"
+                    >
+                      Our Support
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="#"
+                      className="text-[#310C7D]  hover:text-gray-900"
+                    >
+                      System Status
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="#"
+                      className="text-[#310C7D]  hover:text-gray-900"
+                    >
+                      Knowledge Base
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/contact-us"
+                      className="text-[#310C7D]  hover:text-gray-900"
+                    >
+                      Contact Us
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="#"
+                      className="text-[#310C7D]  hover:text-gray-900"
+                    >
+                      Write For Us
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Helpful Links */}
+              <div className="w-full xs:w-1/2 sm:w-1/2 md:w-1/6 px-4 mb-6 md:mb-0">
+                <h5 className="text-[15px] font-semibold text-[#310C7D] mb-4">
+                  Helpful Links
+                </h5>
+                <ul className="space-y-2">
+                  <li>
+                    <Link
+                      to="/privacypolicy"
+                      className="text-[#310C7D]  hover:text-gray-900"
+                    >
+                      Privacy Policy
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/terms-condition"
+                      className="text-[#310C7D]  hover:text-gray-900"
+                    >
+                      Terms & Conditions
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/refundpolicy"
+                      className="text-[#310C7D]  hover:text-gray-900"
+                    >
+                      Refunds & Cancellation
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/faqs"
+                      className="text-[#310C7D]  hover:text-gray-900"
+                    >
+                      FAQs
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="#"
+                      className="text-[#310C7D]  hover:text-gray-900"
+                    >
+                      Support
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </Col>
 
-        {/* Footer Categories */}
-        <Col xs={24} sm={12} md={18}>
-          <Row gutter={[16, 16]}>
-            {(['Quick Links', 'Company', 'Support', 'Helpful Links'] as Category[]).map(
-              (category, index) => (
-                <Col xs={24} sm={12} md={6} key={index}>
-                  <Title level={5}>{category}</Title>
-                  <Menu style={{ border: 'none' }}>
-                    {getLinksForCategory(category)}
-                  </Menu>
-                </Col>
-              )
-            )}
+          {/* Footer Featured Products */}
+          <div className="py-6 text-center">
+            <h4 className="text-gray-900 text-[18px] font-medium">
+              Our Featured Products
+            </h4>
+            <div className="flex justify-center space-x-4 mt-4">
+              <div className="p-2">
+                <span className="flex items-center justify-center">
+                  <StaticImage
+                    src="../images/foot-hand-icn.svg"
+                    alt="Visa Handshake"
+                    placeholder="blurred"
+                    layout="fixed"
+                    width={30}
+                    height={30}
+                    className="mr-2"
+                  />
+                  Visa Handshake
+                </span>
+              </div>
+              <div className="p-2">
+                <span className="flex items-center justify-center">
+                  <StaticImage
+                    src="../images/foot-passport-icn.svg"
+                    alt="Visa Handshake"
+                    placeholder="blurred"
+                    layout="fixed"
+                    width={30}
+                    height={30}
+                    className="mr-2"
+                  />{' '}
+                  Easy Slotbooking
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* Footer Copyright and Links */}
+          <Row className=" border-t gap-10  border-gray-200 py-6">
+            <Col xs={24} md={6}>
+              <Text className="text-sm text-gray-500">
+                © 2023 - 2024 ES Booking. All rights reserved.
+              </Text>
+            </Col>
+            <div className="text-center">
+              <div className="inline-block">
+                <Link to="#" className="text-gray-600 hover:text-gray-900">
+                  Privacy
+                </Link>
+                <span className="mx-2 text-gray-400">|</span>
+                <Link to="#" className="text-gray-600 hover:text-gray-900">
+                  Terms of Use
+                </Link>
+                <span className="mx-2 text-gray-400">|</span>
+                <Link to="#" className="text-gray-600 hover:text-gray-900">
+                  Cookie Preferences
+                </Link>
+                <span className="mx-2 text-gray-400">|</span>
+                <span className="text-gray-600">
+                  Do not sell or share any personal information
+                </span>
+              </div>
+            </div>
+
+            <Col xs={24} md={4} className="text-right">
+              <Button
+                icon={<GlobalOutlined />}
+                className="py-4 bg-[#2F0559] text-[#FFFFFF]"
+              >
+                Choose Region
+              </Button>
+            </Col>
           </Row>
-        </Col>
-      </Row>
 
-      <Row
-        style={{
-          marginTop: '40px',
-          backgroundColor: 'transparent',
-          padding: '20px',
-        }}
-        justify="space-between"
-        align="middle"
-      >
-        <Col xs={24} sm={12}>
-          <Text>
-            © 2020 Tailblocks —{' '}
-            <a
-              href="https://twitter.com/knyttneve"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: '#1890ff' }}
-            >
-              @knyttneve
-            </a>
-          </Text>
-        </Col>
+          {/* Region Selector */}
 
-        {/* Social Icons */}
-        <Col xs={24} sm={12} style={{ textAlign: 'right' }}>
-          <a
-            href="https://facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FacebookOutlined
-              style={{ fontSize: '24px', margin: '0 10px', color: '#555' }}
-            />
-          </a>
-          <a
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <TwitterOutlined
-              style={{ fontSize: '24px', margin: '0 10px', color: '#555' }}
-            />
-          </a>
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <InstagramOutlined
-              style={{ fontSize: '24px', margin: '0 10px', color: '#555' }}
-            />
-          </a>
-          <a
-            href="https://linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <LinkedinOutlined
-              style={{ fontSize: '24px', margin: '0 10px', color: '#555' }}
-            />
-          </a>
-        </Col>
-      </Row>
-    </Footer>
+          {/* USA Affiliation Disclaimer */}
+        </div>
+      </Footer>
+      <div className=" bg-[#050826] text-[13px] py-4 text-center text-[#878985]">
+        <span>
+          Easy Slot Booking is not affiliated, associated, authorized, or
+          endorsed by the US Government or any of its subsidiaries.
+        </span>
+      </div>
+    </div>
   );
 };
 
