@@ -1,8 +1,6 @@
 import React from 'react';
-import { Typography, Row, Col } from 'antd';
+import { Row, Col } from 'antd';
 import 'tailwindcss/tailwind.css';
-
-const { Title, Paragraph } = Typography;
 
 const featuresData = [
   {
@@ -49,63 +47,25 @@ const FeaturesSection = () => {
       <div className="container px-5 py-24 mx-auto">
         <Row gutter={[32, 32]} className="no-margin">
           {/* Left Column */}
-          <Col xs={24} md={12}>
-            <Title
-              style={{
-                fontSize: '0.9375rem', // Use inline styles for font size
-                fontWeight: 600,
-                color: '#1a0681',
-              }}
-              level={5}
-              className="text-[0.9375rem] text-[#1a0681] font-semibold"
-            >
+          <Col xs={24} md={12} className="font-sans">
+            <div className="text-[0.9375rem] font-semibold text-[#1a0681]">
               Features
-            </Title>
-            <div className="feat_main_head">
-              <Title
-                style={{
-                  fontSize: '2.25rem', // Use inline styles for font size
-                  lineHeight: '2.65rem',
-                  fontWeight: 500,
-                  color: '#000',
-                }}
-                level={2}
-                className="text-gray-900"
-              >
-                Built specifically for the
-              </Title>
-              <Title
-                style={{
-                  fontSize: '2.65rem', // Use inline styles for font size
-                  fontWeight: 700,
-                  letterSpacing: '0.0225rem',
-                  color: '#000',
-                  marginTop: '0px',
-                }}
-                level={1}
-                className="text-indigo-600"
-              >
-                users want visa easily
-              </Title>
             </div>
-            <Paragraph
-              style={{
-                fontSize: '0.9375rem', // Use inline styles for font size
-                lineHeight: '1.875rem',
-                fontWeight: 300,
-                letterSpacing: '0.00938rem',
-                color: '#656565',
-              }}
-              className="regular_text"
-            >
-              We bring the breadth of our experience and industry knowledge to
-              help your team. Visualize your product roadmap, write feature
-              specs, and cross-functional collaboration.
-            </Paragraph>
+            <div className="feat_main_head mt-[2rem] mb-[1rem]">
+              <div className="text-gray-900 text-[2.25rem] leading-[2.65rem] font-medium">
+                Built specifically for the
+              </div>
+              <div className="font-sans text-[2.65rem] font-semibold tracking-[0.0225rem] text-[#000] mt-0">
+                users want visa easily
+              </div>
+            </div>
+            <p className="text-[0.9375rem] leading-[1.875rem] font-light text-[#656565] tracking-[0.00938rem]">
+              We bring the breadth of our experience and industry knowledge to help your team. Visualize your product roadmap, write feature specs, and cross-functional collaboration.
+            </p>
           </Col>
 
           {/* Right Column */}
-          <Col xs={24} md={12}>
+          <Col xs={24} md={12} className='font-sans'>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {featuresData.map((item, index) => (
                 <div key={index} className="p-4">
@@ -119,32 +79,10 @@ const FeaturesSection = () => {
                       />
                     </div>
                   </div>
-                  <Title
-                    style={{
-                      display: 'flex',
-                      width: '100%',
-                      margin: '1.5rem 0',
-                      fontSize: '1.25rem',
-                      fontWeight: 600,
-                      color: '#000',
-                      letterSpacing: '0.025rem',
-                    }}
-                    level={4}
-                    className="text-gray-900 mt-2"
-                  >
+                  <div className="text-[#000] my-[1.5rem] text-[1.25rem] font-semibold tracking-[0.025rem]">
                     {item.title}
-                  </Title>
-                  <p
-                    style={{
-                      display: 'flex',
-                      fontSize: '0.875rem',
-                      lineHeight: '1.625rem',
-                      fontWeight: 300,
-                      color: '#656565',
-                      letterSpacing: '0.00875rem',
-                    }}
-                    className="text-gray-600"
-                  >
+                  </div>
+                  <p className="text-[0.875rem] leading-[1.625rem] font-light text-[#656565] tracking-[0.00875rem]">
                     {item.description}
                   </p>
                 </div>

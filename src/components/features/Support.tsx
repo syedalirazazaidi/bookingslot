@@ -4,15 +4,15 @@ import 'tailwindcss/tailwind.css';
 
 const SupportCustomersSection = () => {
   return (
-    <section className="text-gray-600 bg-[#f5f5f5]">
+    <section className="text-gray-600 bg-[#f5f5f5] ">
       <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-        <Row gutter={[16, 16]} className="flex flex-col md:flex-row items-center">
+        <Row gutter={[16, 16]} className="flex flex-col md:flex-row items-center ">
           {/* Left Side: Icon, Title, Text, and List */}
-          <Col xs={24} md={12} className="md:text-left text-center mb-16 md:mb-0">
+          <Col xs={24} md={12} className="md:text-left text-center mb-16 md:mb-0 font-sans">
             <div className="flex flex-col items-center md:items-start text-center md:text-left">
               {/* Icon */}
               <div className="flex items-center justify-center mb-6">
-                <span className="flex justify-center items-center w-[72px] h-[72px] bg-[#6641C5] rounded-full">
+                <span className="flex justify-center items-center w-[72px] h-[72px] bg-[#2f0559] rounded-full">
                   <img
                     src="https://duoinn.com/easyslotbooking/assets/images/icons/features/feat-error-icn.svg"
                     alt="Support Icon"

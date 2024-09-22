@@ -1,5 +1,5 @@
 import React from 'react'
-import Banner from './Banner'
+
 import HeroSection from './HeroSection'
 import HeroSectionFeatres from './HeroSection_features'
 import SupportSection from './Support'
@@ -12,7 +12,7 @@ export default function Feature() {
             <HeroSectionFeatres/>
             <SupportSection/>
             <CountrySection/>
-            <Banner/>
+   
         </div>
     )
 }
