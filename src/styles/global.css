@@ -24,7 +24,41 @@ body {
 .ant-col {
   font-family: 'Poppins', sans-serif !important;
 }
-/* .ant-typography {
-    font-family: 'Poppins', sans-serif !important;
-  }
-   */
+
+
+/* Scoped CSS for FAQ section */
+#faq-section .ant-collapse-content {
+  background-color: transparent !important;
+}
+
+#faq-section .ant-collapse-header {
+  background-color: transparent !important;
+  font-weight: 500;
+}
+
+#faq-section .ant-collapse-content-box {
+  background-color: transparent !important;
+}
+
+/* Ensure specific styles only apply to this section */
+#faq-section .ant-collapse {
+  border: none !important;
+}
+
+#faq-section .ant-collapse-item {
+  /* border: none !important; */
+
+  border-bottom: none !important;
+  border-top: 1px solid #9f9f9f;
+
+}
+#faq-section .ant-collapse-item-active {
+  /* border: none !important; */
+  
+}
+#faq-section .ant-collapse-content-active {
+  border: none !important;
+ 
+}
+
+
