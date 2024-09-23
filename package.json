@@ -11,6 +11,7 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "develop": "gatsby develop",
+    "gatsby": "gatsby develop -H 0.0.0.0",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
