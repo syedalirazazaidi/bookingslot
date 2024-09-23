@@ -5,7 +5,7 @@ export default function Pricing() {
   return (
     <div>
       <HeroSection />
-      <TestimonialSection/>
+      <TestimonialSection />
     </div>
   );
 }
