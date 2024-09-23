@@ -5,11 +5,7 @@ import Layout from '../components/Layout';
 export default function Features() {
   return (
     <Layout>
-      <Feature/>
-
+      <Feature />
     </Layout>
-    // <div>
-    //  
-    // </div>
   );
 }
