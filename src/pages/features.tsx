@@ -1,10 +1,15 @@
 import React from 'react';
 import Feature from '../components/features/Main';
+import Layout from '../components/Layout';
 
 export default function Features() {
   return (
-    <div>
-     <Feature/>
-    </div>
+    <Layout>
+      <Feature/>
+
+    </Layout>
+    // <div>
+    //  
+    // </div>
   );
 }
