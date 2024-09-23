@@ -7,21 +7,22 @@
 /* Ensure Poppins is applied to the body globally */
 /* Ensure the font-family is set globally */
 body {
-    @apply font-sans; /* This will apply the 'Poppins' font globally as we have set 'font-sans' to use Poppins in tailwind.config.js */
-  }
+  @apply font-sans; /* This will apply the 'Poppins' font globally as we have set 'font-sans' to use Poppins in tailwind.config.js */
+}
 
 /* Override Ant Design's font-family */
 .ant {
-    font-family: 'Poppins', sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 /* Optional: Override any specific Ant Design component classes if needed */
-.ant-btn, .ant-input, .ant-card {
-    font-family: 'Poppins', sans-serif !important;
+.ant-btn,
+.ant-input,
+.ant-card {
+  font-family: 'Poppins', sans-serif !important;
 }
-.ant-col{
-    font-family: 'Poppins', sans-serif !important;
-
+.ant-col {
+  font-family: 'Poppins', sans-serif !important;
 }
 /* .ant-typography {
     font-family: 'Poppins', sans-serif !important;
