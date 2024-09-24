@@ -28,14 +28,14 @@ export default function AboutSection() {
               <h2 className="text-[30px] font-semibold text-black">
                 Easy Slot Booking for visa appointments
               </h2>
-              <p className="mt-4  md:text-[15px] font-thin text-gray-900 tracking-widest">
+              <p className="mt-4  md:text-[15px] font-extralight text-gray-900 tracking-widest">
                 Now never miss the single slot with Easy Slot Booking. Getting a
                 visa is always tiresome and problematic, especially when getting
                 a US visa. It's tough to get dates as per your choice;
                 sometimes, you can get blocked with multiple logins. But if you
                 want visa booking quickly, you've come to the right place!
               </p>
-              <p className="mt-4  md:text-1xl font-thin text-gray-900 tracking-widest">
+              <p className="mt-4  md:text-1xl font-extralight text-gray-900 tracking-widest">
                 With chrome extension and Alerts, it becomes easier! Users can
                 look over available dates using telegram and the chrome
                 extension surveys errors, if any, during slot booking. The

@@ -31,7 +31,7 @@ export default function Visa() {
               <h2 className="text-gray-900 text-4xl title-font font-bold mb-4">
                 slots for your possible visa dates
               </h2>
-              <p className="mt-4  md:text-[15px] font-thin text-gray-900 tracking-widest">
+              <p className="mt-4  md:text-[15px] font-extralight text-gray-900 tracking-widest">
                 We got your back from all visa category channels, from community
                 additions to premium users. Join us and never miss out on an
                 available slot, ever.
@@ -52,7 +52,7 @@ export default function Visa() {
                 <h2 className="text-lg text-black font-semibold">
                   Industry Pioneers
                 </h2>
-                <p className="mt-2  md:text-[15px] font-thin text-gray-900 tracking-widest">
+                <p className="mt-2  md:text-[15px] font-extralight text-gray-900 tracking-widest">
                   We were the first ones to provide our customers with visa slot
                   alerts. Doing this longer than anyone else on the market.
                 </p>
@@ -73,7 +73,7 @@ export default function Visa() {
                 <h2 className="text-lg text-black font-semibold">
                   Spotless Rating
                 </h2>
-                <p className="mt-2  md:text-[15px] font-thin text-gray-900 tracking-widest">
+                <p className="mt-2  md:text-[15px] font-extralight text-gray-900 tracking-widest">
                   We provide nothing but exemplary service corroborated by our
                   perfect 5 star rating given by thousands of satisfied
                   customers.
@@ -95,7 +95,7 @@ export default function Visa() {
                 <h2 className="text-lg text-black font-semibold">
                   Most Experienced
                 </h2>
-                <p className="mt-2  md:text-[15px] font-thin text-gray-900 tracking-widest">
+                <p className="mt-2  md:text-[15px] font-extralight text-gray-900 tracking-widest">
                   We provide nothing but exemplary service corroborated by our
                   perfect 5 star rating given by thousands of satisfied
                   customers.
@@ -117,7 +117,7 @@ export default function Visa() {
                 <h2 className="text-lg text-black font-semibold">
                   Most Versatile
                 </h2>
-                <p className="mt-2  md:text-[15px] font-thin text-gray-900 tracking-widest">
+                <p className="mt-2  md:text-[15px] font-extralight text-gray-900 tracking-widest">
                   We provide the widest range of features and tools than any
                   other company in this industry. Making sure you stay ahead.
                 </p>

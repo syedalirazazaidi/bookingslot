@@ -17,7 +17,7 @@ export default function Management() {
           <h1 className="mt-4 sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
             Managing visa slot booking has never been easier
           </h1>
-          <p className=" text-[16px] font-thin text-gray-900 ">
+          <p className=" text-[16px] font-extralight text-gray-900 ">
             We help you get your visa slots in a quick, easy, and secure manner.
             Become a part of our family today for a smoother visa slot booking
             process.

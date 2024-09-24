@@ -40,7 +40,7 @@ const WhatWeDoSection = () => {
                 <h2 className="text-[17px] mt-[3px] font-medium text-[#000000]">
                   Easy to Useable
                 </h2>
-                <p className="mt-4 md:text-1xl font-thin text-gray-900 tracking-widest">
+                <p className="mt-4 md:text-1xl font-extralight text-gray-900 tracking-widest">
                   We always try to make our platform easier every time.
                 </p>
               </Card>
@@ -66,7 +66,7 @@ const WhatWeDoSection = () => {
                 <h2 className="text-[17px] mt-[3px] font-medium text-[#000000]">
                   1M+ Users
                 </h2>
-                <p className="mt-4 md:text-1xl font-thin text-gray-900 tracking-widest">
+                <p className="mt-4 md:text-1xl font-extralight text-gray-900 tracking-widest">
                   We always give good feelings and impressions to each of our
                   users{' '}
                 </p>
@@ -93,7 +93,7 @@ const WhatWeDoSection = () => {
                 <h2 className="text-[17px] mt-[3px] font-medium text-[#000000]">
                   Tranparency Services
                 </h2>
-                <p className="mt-4 md:text-1xl font-thin text-gray-900 tracking-widest">
+                <p className="mt-4 md:text-1xl font-extralight text-gray-900 tracking-widest">
                   No one was harmed because everything was clear
                 </p>
               </Card>
@@ -119,7 +119,7 @@ const WhatWeDoSection = () => {
                 <h2 className="text-[17px] mt-[3px] font-medium text-[#000000]">
                   Happy Clients
                 </h2>
-                <p className="mt-4 md:text-1xl font-thin text-gray-900 tracking-widest">
+                <p className="mt-4 md:text-1xl font-extralight text-gray-900 tracking-widest">
                   Happy and satiesfied clients worldwide and still counting
                 </p>
               </Card>
