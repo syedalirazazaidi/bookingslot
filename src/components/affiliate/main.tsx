@@ -3,6 +3,7 @@ import Cashback from './Cashback';
 import Invitefriend from './Invitefriend';
 import Faqs from './Faqs';
 import Cashreward from './Cashreward';
+import Influencer from './Influencer';
 
 export default function Affilate() {
   return (
@@ -11,6 +12,7 @@ export default function Affilate() {
       <Invitefriend />
       <Faqs />
       <Cashreward/>
+      <Influencer/>
     </div>
   );
 }
