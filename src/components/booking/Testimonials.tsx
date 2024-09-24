@@ -18,7 +18,7 @@ export default function Testimonials() {
           >
             Here's Why Our Customers Love Us
           </Title>
-          <p className="lg:w-full mx-auto font-thin leading-relaxed text-base">
+          <p className="lg:w-full mx-auto font-extralight leading-relaxed text-base">
             From 24/7 support that acts as your extended team to incredibly fast
             website performance, there are plenty of reasons why our users keep
             recommending us!
