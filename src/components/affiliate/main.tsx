@@ -2,6 +2,7 @@ import React from 'react';
 import Cashback from './Cashback';
 import Invitefriend from './Invitefriend';
 import Faqs from './Faqs';
+import Cashreward from './Cashreward';
 
 export default function Affilate() {
   return (
@@ -9,6 +10,7 @@ export default function Affilate() {
       <Cashback />
       <Invitefriend />
       <Faqs />
+      <Cashreward/>
     </div>
   );
 }
