@@ -67,6 +67,7 @@ const HeroSection: React.FC = () => {
           {/* Card 1 */}
           <Col xs={24} md={8}>
             <Card
+           
               title={
                 <div className="flex items-center">
                   <i className="inline-flex mt-1 mr-1 text-2xl text-[#091e42]">
@@ -81,12 +82,12 @@ const HeroSection: React.FC = () => {
                 </div>
               }
               bordered={false}
-              className="shadow-lg rounded-[6px] p-6 border border-gray-300 transition-all duration-300 ease-in-out h-full"
+              className="shadow-lg rounded-[6px] p-0 border border-gray-300 transition-all duration-300 ease-in-out h-full"
             >
               <p className="text-gray-600 mb-4">
                 Start-up plan: Includes taxes, DO hosting charges
               </p>
-              <ul className="pl-5 text-left mb-6 text-[#33336f] space-y-2">
+              <ul className=" text-left mb-6 text-[#33336f] space-y-2">
                 <li className="flex justify-between w-full pb-[5px]">
                   <span className="inline-flex font-poppins text-[0.8125rem] font-normal text-[#091e42] tracking-[0.00813rem]">
                     RAM
@@ -177,12 +178,12 @@ const HeroSection: React.FC = () => {
                 </div>
               }
               bordered={false}
-              className="shadow-lg rounded-[0px] p-6 border border-gray-300 transition-all duration-300 ease-in-out h-full relative z-0"
+              className="shadow-lg rounded-[0px] p-0 border border-gray-300 transition-all duration-300 ease-in-out h-full relative z-0"
             >
               <p className="text-gray-600 mb-4">
                 Excluding Taxes. Includes DO Hosting Charges
               </p>
-              <ul className="pl-5 text-left mb-6 text-[#33336f] space-y-2">
+              <ul className=" text-left mb-6 text-[#33336f] space-y-2">
                 <li className="flex justify-between w-full pb-[5px]">
                   <span className="inline-flex font-poppins text-[0.8125rem] font-normal text-[#091e42] tracking-[0.00813rem]">
                     RAM
@@ -271,12 +272,12 @@ const HeroSection: React.FC = () => {
                 </div>
               }
               bordered={false}
-              className="shadow-lg rounded-[6px] p-6 border border-gray-300 transition-all duration-300 ease-in-out h-full"
+              className="shadow-lg rounded-[6px] p-0 border border-gray-300 transition-all duration-300 ease-in-out h-full"
             >
               <p className="text-gray-600 mb-4">
                 Excluding Taxes. Includes DO Hosting Charges
               </p>
-              <ul className="pl-5 text-left mb-6 text-[#33336f] space-y-2">
+              <ul className=" text-left mb-6 text-[#33336f] space-y-2">
                 <li className="flex justify-between w-full pb-[5px]">
                   <span className="inline-flex font-poppins text-[0.8125rem] font-normal text-[#091e42] tracking-[0.00813rem]">
                     RAM
